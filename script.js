@@ -9,7 +9,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const MAX_MISMATCHES = 5;
 
     const cardArray = [
-        // ... (the card objects remain the same)
+        { name: 'card1', img: 'images/City-Center.PNG' },
+        { name: 'card1', img: 'images/City-Center.PNG' },
+        { name: 'card2', img: 'images/Edmonton.PNG' },
+        { name: 'card2', img: 'images/Edmonton.PNG' },
+        { name: 'card3', img: 'images/Kigali-CC.PNG' },
+        { name: 'card3', img: 'images/Kigali-CC.PNG' },
+        { name: 'card4', img: 'images/Kivu-Marina.PNG' },
+        { name: 'card4', img: 'images/Kivu-Marina.PNG' },
+        { name: 'card5', img: 'images/Kivu.PNG' },
+        { name: 'card5', img: 'images/Kivu.PNG' },
+        { name: 'card6', img: 'images/Landscaping.png' },
+        { name: 'card6', img: 'images/Landscaping.png' },
+        { name: 'card7', img: 'images/Project.PNG' },
+        { name: 'card7', img: 'images/Project.PNG' },
+        { name: 'card8', img: 'images/Rebero.PNG' },
+        { name: 'card8', img: 'images/Rebero.PNG' },
+        { name: 'card9', img: 'images/Rebero2.PNG' },
+        { name: 'card9', img: 'images/Rebero2.PNG' },
+        { name: 'card10', img: 'images/Rubavu.PNG' },
+        { name: 'card10', img: 'images/Rubavu.PNG' },
+        // ...add more pairs as needed
     ];
 
     function shuffle(array) {
