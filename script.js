@@ -124,6 +124,9 @@ document.addEventListener('DOMContentLoaded', () => {
             alert('Congratulations! You found them all!');
         }
     }
-
+    function cardMatch() {
+        return cardsChosen[0] === cardsChosen[1];
+    }
+    
     startButton.addEventListener('click', createBoard);
 });
