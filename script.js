@@ -61,9 +61,9 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateScoreAndCheckGameOver() {
         // Assume cardMatch() function checks if the two flipped cards match
         if (cardMatch()) {
-            score += 6; // Add 6 points for a match
+            score += 20; // Add 20 points for a match
         } else {
-            score = Math.max(0, score - 1); // Reduce by 1 for a mismatch
+            score = Math.max(0, score - 10); // Reduce by 10 for a mismatch
             mismatches++;
             if (mismatches >= MAX_MISMATCHES) {
                 gameOver(); // Game over after 5 mismatches
@@ -78,10 +78,14 @@ document.addEventListener('DOMContentLoaded', () => {
         scoreDisplay.textContent = `Score: ${score}`;
     }
 
+    function resetGame() {
+        createBoard(); // Reset the game board
+    }
+    
     function gameOver() {
-        // Handle game over logic here
         alert('Game Over! You reached the maximum number of mismatches.');
-        // You can add further logic for restarting the game or any other action
+        resetGame(); // Reset the game after game over
+        
     }
 
     function createBoard() {
