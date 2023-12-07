@@ -46,6 +46,8 @@ h1 {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    position: relative;
+    perspective: 1000px; /* Add a perspective for 3D effect */
 }
 
 .card img {
@@ -53,12 +55,17 @@ h1 {
     height: auto;
     visibility: hidden; /* Hide images by default */
     display: block;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d; /* Allow 3D transformation */
 }
 
 .card.show img {
     visibility: visible; /* Show image when card is flipped */
 }
 
+.card.flipped img {
+    transform: rotateY(180deg); /* Rotate the card to reveal the back face */
+}
 #start-game {
     background-color: #4caf50;
     color: white;
