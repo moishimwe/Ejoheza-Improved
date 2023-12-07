@@ -24,3 +24,8 @@ The pipeline is created using AWS Code Pipeline.  The pipeline pulls the code fr
 
 ## Cost
 All services used are eligible for the [AWS Free Tier](https://aws.amazon.com/free/).  However, charges will incur at some point so it's recommended that you shut down resources after completing this tutorial.
+
+## change to the game
+This modification incorporates a scoring system, adding 20 points for every match and reducing by 10 for every mismatch, while limiting the shuffle function to shuffle only the first 5 elements.
+
+Remember to add an HTML element with the id 'score' to display the score:
